@@ -1,0 +1,18 @@
+nav{
+    display:$d-flex;
+    div{
+        ul{
+            display: $d-flex;
+            li{
+                list-style: none;
+                a{
+                color: $primary;
+                &:hover{
+                    color: $secondary;
+                }
+                
+                }
+            }
+        }            
+    }
+}

@@ -1,0 +1,28 @@
+main{
+    background-color:$info;
+    padding:20px;
+}
+header{
+    background-color: $info;
+    padding: 20px;
+}
+section{
+        img{
+            padding: 25px;
+        }
+        h3{
+            font-size:$textMedium ;
+        }
+        ol{
+            font-family:"Noto Sans", sans serif ;
+            color:$secondary;
+            li{
+                color: $primary;
+            }
+        }
+        p{
+            font-size: $textBig;
+            line-height: 1.4em;
+            color: $main;
+        }   
+}

@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* selectores de etiquetas */
+h1{
+    color:rgb(163, 29, 29);
+}
+h2{
+    color:rgb(66, 66, 66)
+}
+
+li{
+    color:rgb(66, 66, 66)
+}
+
+p{
+    color: rgb(163, 29, 29)
+
+}
+a{
+    color:rgb(163, 29, 29);
+}
+h3{
+    color:rgb(163, 29, 29)
+}
+h4{
+    color:rgb(66, 66, 66)
+}
+span{
+    color: rgb(163, 29, 29);
+}
+h5{
+    color:rgb(66, 66, 66)
+}
+td{
+   color:rgb(163, 29, 29) 
+}
+legend{
+    color:rgb(163, 29, 29)
+}
+label{
+    color:rgb(66, 66, 66)
+}
+h6{
+    color:rgb(66, 66, 66)
+}
+
+/* selecetores de clases  */
+.textDark{
+    color: #DA212020;
+}
+.textDanger{
+    color:rgb(66, 66, 66)
+}
+.textLeft{
+    text-align: left;
+}
+.textRight{
+    text-align: right;
+    position: relative;
+}
+.textCenter{
+    text-align: center;
+}
+.textJustify{
+    text-align: justify;
+}
+
+/* selectores de ID*/
+.textStrong{
+    color:red
+}
+/* selector universal reset */
+html{
+    size: 62.5%;
+}
+body{
+    background-image: url(../img/black.png) #000;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /*background-size: cover;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 50vh 10vh ;
+    grid-template-areas:"nav" "ul" "section" ; */
+
+}
+/*end fondo*/
+.contenedor{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(3, auto);   
+}
+.section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    grid-row-gap: 6px ;
+    margin-top: 10px;
+}
+.encabezado{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and(min-width: 320px){
+
+    .section{
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 6fr;
+    }
+    
+    
+}
+@media only screen and(min-width: 1200px){
+    body{
+        grid-template-columns: repeat(2, 30%) 20px 30%; 
+        grid-template-rows: 10vh 70vh 20vh; 
+        grid-template-areas: "nav" "img" "section" "ol" "footer";
+    }
+
+}    
+    
+#num{
+    padding: 5px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+nav{
+    background-color: rgb(163, 29, 29);
+    padding: 10px;
+}
+
+/* selectores de etiquetas descendentes */
+nav ul {
+    color: rgb(66, 66, 66);
+    font-family: "Noto Sans", sans serif;
+    font-size: 1.3rem;
+    font-weight: 400; 
+    text-decoration: rgb(66, 66, 66);
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    /* list-style-type: kannada;*/
+    list-style-image: url(../img/black.png);
+    list-style-position: outside;
+    display: inline-block;
+    text-decoration:none;
+    font-size: 1.5rem;
+    background-color: black;
+    text-align: center;
+}
+nav ul li a:hover{
+    color:silver;
+
+}
+/* nav ul li a:active{
+    
+
+} */
+header{
+    height: 80vh;
+    background-image: url(../muscle.webp);
+    background-attachment: fixed;
+    background-position:center;
+}
+ nav h1{
+    font-size: 5rem;
+    background-color: black;
+    border: dotted 6px rgb(163, 29, 29);
+}
+
+footer{
+    display: flex;
+ flex-direction: column-reverse;
+}
+
+/*selectores de grupo*/
+h1, h2, h3{
+    font-family: 'Noto Sans', sans-serif;
+}
+section p{
+    background-color: black;
+    width: 100%;
+    color:rgb(163, 29, 29);
+    float:center;
+    box-sizing:border-box;
+    border: solid 3px rgb(163, 29, 29);
+    display: flex;
+}
+section h3{
+    background-color: black;
+    width: 8.6%;
+    border: solid rgb(163, 29, 29);
+}
+section ol li{
+    height: 50px;
+    background-color:silver;
+    overflow-y:inherit;
+    width: 20%;
+}
+section p{
+    font-size: 2rem;
+    line-height: 2,2rem;
+    letter-spacing: 2px;
+    word-spacing: 2,3px;
+    font-weight: 400;
+}
+footer{
+    padding: 10px 10px;
+    text-align: center;
+    bottom: 0;
+    background-color: rgb(163, 29, 29);
+}
+/*Contnedor GRID*/
+.grid{
+    width: 99%;
+    display: grid;
+
+}
+/*Filas y columnas*/
+.grid-template-columns-row{
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: 2vh ;
+    /* grid-column-gap: 10rem;
+    grid-row-gap: 10px; */
+    grid-gap: 1px;
+}
+/*Areas*/
+.template-areas{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    grid-template-areas: "plan1" "plan2" "plan3" "plan4" "plan5";
+} 
+
+#plan1{
+    grid-area: plan1;
+}
+#plan2{
+    grid-area: plan2;
+}
+#plan3{
+    grid-area: plan3;
+}
+#plan4{
+    grid-area: plan4;
+}
+#plan5{
+    grid-area: plan5;
+}
+#plan6{
+    grid-area: plan6;
+}
+/*posicion de los elementos*/
+.justify-items{
+    justify-items: center;
+} 
+.align-items{
+    align-items: end;
+}
+/*posicion del contenido*/
+.justify-content{
+    grid-template-columns: repeat(2, 200px);
+    height: 80vh;
+    justify-content: space-between;
+} 
+.align-content{
+    align-content: space-around;
+}
+.justify-content div{
+    padding: 20px;
+    text-align: center;
+}
+.column-row-start-end-{
+    grid-template-columns: repeat(3, 200px);
+    height: 80vh;
+}
+.column-row-start-end-item{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+/*fondo de colores*/
+.bg-silver{
+        background-color: silver;
+}
+.bg-dark{
+    background-color: black;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+.bg-blue{
+    background: blue;
+}
+.bg-red{
+    background:red
+}
+/*.linear-gradiet{
+    background: linear-gradient(to top, silver, black);
+}
+.transform:hover{
+    transform: translateX(-10px);
+    cursor: pointer;
+
+}
+.rotate:hover{
+    transform: rotate(10deg);
+    transition: transform 5s;
+   
+}
+.scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 2s;
+}
+/*.skew:hover{
+
+} */
+/* @keyframes animateDiv{
+    0%{width: 100px;}
+    25%{width: 200px;}
+    50%{width: 300px; background-color: black;}
+    75%{width: 200px;}
+    100%{width: 100px; background-color: silver;}
+}
+.animate{
+    background-color: black;
+    animation-name: animateDiv;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s ;
+}
+.transition{
+    width: 100px;
+    height: 200px;
+    background-color: red
+}
+.transition:hover{
+    width: 300px;
+    background-color: black;
+    transition: all 2s ;
+}
+@keyframes textAlpha{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+h3{
+    font-size: 1,3em;
+    animation-name: textAlpha;
+    animation-duration: 2s;
+}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(to top, silver, black);
+    margin: 0 0 20px 30px;
+    border: 0px
+}
+button :hover{
+    background: linear-gradient(to top, black, red );
+    transition: all 2s;
+    cursor: pointer;
+} */ 
